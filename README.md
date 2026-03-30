@@ -61,7 +61,7 @@ After installation of required softare packages and downloading the sample datas
 Please refer to the manuscript cited below for details regarding the YOLO file structure for deploying the ROAM pipeline. Note that several files and associated scripts are needed to 1) preprocess data, 2) prepare data for analysis, 3) train models, and 4) deploy models for real-time monitoring, as well as generating activity budget plots and space use heatmaps. 
 * In addition to training data (images and associated labels/annotations), a train.txt file, .yaml file, and pretrained model weights [("yolov8m.pt"](https://huggingface.co/Ultralytics/YOLOv8)) are needed for training and deploying predictive models on livestream video footage or precorded video sequences. These files can be found in the [Data](./Data) and [Code](./Code) folders.
   
-![ROAM Scripts](./Images/Figure3.png)
+![ROAM Scripts]()
 As opposed to our previous work, "PantherAI", which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript.
 
 ```
@@ -70,24 +70,17 @@ python ROAM.py
 [![Watch the video](https://github.com/lidunnchen/PantherAI/blob/main/Images/Video1_Still.png)](https://github.com/lidunnchen/PantherAI/blob/main/Images/SupplementalVideo1_c28_loco_obman.mp4) 
 
 Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
-
-![ROAM_LiveMonitoringModule](./Images/Figure1.png)
-
+<img width="3892" height="2207" alt="ROAM_LoopSwimInferrence" src="https://github.com/user-attachments/assets/cf7c4c50-c238-43ad-9c6b-4bc8d6729b85" />
 
 Once the model is reliably detecting behaviour(s) of interest, it is possible to send real-time alerts triggered by specific behaviours, such as stereotypical pacing. The triggering threshold can be easily adjusted (a single frame detection vs. two minutes of continuous pacing). As a single missed detection could prevent the email alert from triggering, we also set a parameter specifying the percent of detected frames (e.g., 80% instead of 100%) that would qualify and initiate a pacing alert.
 
 Important to note is that contexually similar behaviours, such as locomotion and stereotypical pacing, can be distinguished from one another by applying logic-based heuristics to the base behavioural category. As an example, see the logic used below, which sets the criteria for what qualifies routine swimming from stereotypic loop swimming bouts. 
-![ROAM_LoopSwimInferrence](./Images/Figure2.png)
-
+<img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/ed2632a5-b6e3-4b8c-a273-43df529b82cd" />
 
 ![ROAM Scripts](./Images/__.png)
 
-
-```
-python 08_heatmap_video.py
-```
-![Heatmap](./Images/Figure7_heatmap.png)
-* 
+To demonstrate applicability beyond polar bear monitoring in zoological settings, the ROAM framework was applied to two publicly available datasets representing distinct taxa and study contexts, including free-ranging wildlife from the Siberian jay and KABR datasets (Chan et al., 2025; Kholiavchenko et al., 2025). In each case, deployment required only substitution of task-specific model weights and user-defined behavioural classes (previously validated by Chan et al., 2025) to enable real-time alerts and post-monitoring behavioural summaries.
+<img width="2034" height="2299" alt="Figure6" src="https://github.com/user-attachments/assets/5adcc71e-ad5a-4188-a353-76821161f221" />
 
 
 ## Citation
