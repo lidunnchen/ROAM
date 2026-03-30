@@ -65,9 +65,8 @@ Please refer to the manuscript cited below for details regarding the YOLO file s
 As opposed to our previous work, "PantherAI", which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript.
 
 ```
-python ROAM.py
+python_ROAM.py
 ```
-[![Watch the video](https://github.com/lidunnchen/PantherAI/blob/main/Images/Video1_Still.png)](https://github.com/lidunnchen/PantherAI/blob/main/Images/SupplementalVideo1_c28_loco_obman.mp4) 
 
 Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
 <img width="3892" height="2207" alt="ROAM_LoopSwimInferrence" src="https://github.com/user-attachments/assets/cf7c4c50-c238-43ad-9c6b-4bc8d6729b85" />
