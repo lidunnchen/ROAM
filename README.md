@@ -67,15 +67,16 @@ As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/P
 ```
 python_ROAM.py
 ```
-
-Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
 <img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/46a9343d-a8e8-447e-a65e-2ec9ce02d76a" />
+*Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
+
 
 
 Once the model is reliably detecting behaviour(s) of interest, it is possible to send real-time alerts triggered by specific behaviours, such as stereotypical pacing. The triggering threshold can be easily adjusted (a single frame detection vs. two minutes of continuous pacing). As a single missed detection could prevent the email alert from triggering, we also set a parameter specifying the percent of detected frames (e.g., 80% instead of 100%) that would qualify and initiate a pacing alert.
 
 Important to note is that contexually similar behaviours, such as locomotion and stereotypical pacing, can be distinguished from one another by applying logic-based heuristics to the base behavioural category. As an example, see the logic used below, which sets the criteria for what qualifies routine swimming from stereotypic loop swimming bouts. 
 <img width="3951" height="2268" alt="ROAM_LoopSwimInference" src="https://github.com/user-attachments/assets/e8178ced-e2db-4a75-b662-134529070efe" />
+
 
 
 To demonstrate applicability beyond polar bear monitoring in zoological settings, the ROAM framework was applied to two publicly available datasets representing distinct taxa and study contexts, including free-ranging wildlife from the Siberian jay and KABR datasets (Chan et al., 2025; Kholiavchenko et al., 2025). In each case, deployment required only substitution of task-specific model weights and user-defined behavioural classes (previously validated by Chan et al., 2025) to enable real-time alerts and post-monitoring behavioural summaries.
