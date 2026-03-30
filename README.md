@@ -27,25 +27,25 @@ This repository contains code for the ROAM behavioural monitoring framework, a c
 
 
 ## Quick Start
-We provide the whole computer vision pipeline from data annotation to model training and deployment in the associated Ecological Informatics article linked above. Here, we will run a quick demo inference visualization. Make sure you download the [sample dataset containing images and associated behavioural labels](https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA). In the near future, video walkthroughs will be provided.
+We provide the whole computer vision pipeline from data annotation to model training and deployment in the associated article linked. Here, we will run a quick demo inference visualization. Make sure you download the [sample dataset containing images and associated behavioural labels](https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA). In the near future, video walkthroughs will be provided.
 
 ### Installation
-There are a series of required packages to run the pipeline. We recommend creating a [conda environment](https://www.anaconda.com/). For ease of deployment, we recommend the use of a command line interface such as Anaconda Prompt or a code editor such as like VS Code. 
+There are a series of required packages to run the pipeline. We recommend creating a [conda environment](https://www.anaconda.com/). For ease of deployment, we recommend the use of a command line interface such as Anaconda Prompt or a code editor such as VS Code. 
 
 You can create a new environment and install required packages by running:
 ```
 conda create -n ENVIRO python=3.8 
 conda activate ENVIRO
-cd Desktop/PantherAI
+cd Desktop/ROAM
 
 pip install -r requirements.txt
 ```
 * "ENVIRO" is the name of the working environment and can use any name
 * Use the cd command to set the file directory to where all your data and script are located
 
-## PantherAI Dataset
+## ROAM Dataset
 
-The provided dataset contains ~14,000 labeled images across 5 behavioural classes (feeding, locomotion, object manipulation, resting, and stereotypical pacing). It includes:
+The provided dataset contains ~14,000 labeled images across 5 behavioural classes (locomotion, resting, swimming, headswinging, foraging). It includes:
 
 - `/images/` — raw images
 - `/labels/` — YOLO-format text labels per image
@@ -56,36 +56,43 @@ The provided dataset contains ~14,000 labeled images across 5 behavioural classe
 [Download from Zenodo](https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA)
 
 ## Run Inference on Sample Data
-After installation of required softare packages and downloading the sample dataset, the below series of scripts should be executable through the Anaconda Prompt environment. Ensure that the current working directory is set to `PantherAI_Repo` or the source location of your project files. You can change your working directory by using the "cd" command:  `cd /path/to/PantherAI_Repo`
+After installation of required softare packages and downloading the sample dataset, the below series of scripts should be executable through the Anaconda Prompt environment. Ensure that the current working directory is set to `ROAM_Repo` or the source location of your project files. You can change your working directory by using the "cd" command:  `cd /path/to/ROAM_Repo`
 
-Please refer to the manuscript cited below for details regarding the YOLO file structure for deploying the PantherAI pipeline. Note that several files and associated scripts are needed to 1) preprocess data, 2) prepare data for analysis, 3) train models, and 4) deploy models for real-time monitoring, as well as generating activity budget plots and space use heatmaps. 
+Please refer to the manuscript cited below for details regarding the YOLO file structure for deploying the ROAM pipeline. Note that several files and associated scripts are needed to 1) preprocess data, 2) prepare data for analysis, 3) train models, and 4) deploy models for real-time monitoring, as well as generating activity budget plots and space use heatmaps. 
 * In addition to training data (images and associated labels/annotations), a train.txt file, .yaml file, and pretrained model weights [("yolov8m.pt"](https://huggingface.co/Ultralytics/YOLOv8)) are needed for training and deploying predictive models on livestream video footage or precorded video sequences. These files can be found in the [Data](./Data) and [Code](./Code) folders.
   
-![PantherAI Scripts](./Images/Figure3.png)
+![ROAM Scripts](./Images/Figure3.png)
+As opposed to our previous work, "PantherAI", which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript.
 
 ```
-python 10_video_inference.py
+python ROAM.py
 ```
 [![Watch the video](https://github.com/lidunnchen/PantherAI/blob/main/Images/Video1_Still.png)](https://github.com/lidunnchen/PantherAI/blob/main/Images/SupplementalVideo1_c28_loco_obman.mp4) 
 
-Videos can be processed faster than real-time for retroactively assessing behavioural profiles. For example, the script, "07_activity_budget" can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
-![ActivityBudget](./Images/Figure6.png)
+Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
+
+![ROAM_LiveMonitoringModule](./Images/Figure1.png)
+
 
 Once the model is reliably detecting behaviour(s) of interest, it is possible to send real-time alerts triggered by specific behaviours, such as stereotypical pacing. The triggering threshold can be easily adjusted (a single frame detection vs. two minutes of continuous pacing). As a single missed detection could prevent the email alert from triggering, we also set a parameter specifying the percent of detected frames (e.g., 80% instead of 100%) that would qualify and initiate a pacing alert.
-![PantherAI Scripts](./Images/PantherAI_EmailAlert.png)
 
-Furthermore, the spatial expression of behavioral categories can be visualized using the provided script:
+Important to note is that contexually similar behaviours, such as locomotion and stereotypical pacing, can be distinguished from one another by applying logic-based heuristics to the base behavioural category. As an example, see the logic used below, which sets the criteria for what qualifies routine swimming from stereotypic loop swimming bouts. 
+![ROAM_LoopSwimInferrence](./Images/Figure2.png)
+
+
+![ROAM Scripts](./Images/__.png)
+
 
 ```
 python 08_heatmap_video.py
 ```
 ![Heatmap](./Images/Figure7_heatmap.png)
-* Space usage heatmaps automatically generated from test data using PantherAI. The prevalence of each behaviour: A) Resting, B) Feeding, C) Pacing, and D) Object manipulation (interaction with enrichment items) throughout the habitat is characterized by the detection intensity colour gradient, where yellow and red regions indicate highly trafficked areas in association with the behaviour of interest, while blue and green regions represent lesser used areas.  
+* 
 
 
 ## Citation
 ```
-Chen, L-D., Dodds, S., McGuire, M., Franke, M., & Mastromonaco, G. (2025). PantherAI: An autonomous behavioural monitoring tool for assessing activity budget and space use in a zoo-housed tiger. Ecological Informatics, 103584. https://doi.org/10.1016/j.ecoinf.2025.103584
+Chen, L-D., Dodds, S., McGuire, M., & Mastromonaco, G. (IN PREPARATION). Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams
 ```
 
 
