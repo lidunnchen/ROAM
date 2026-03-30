@@ -74,11 +74,11 @@ Videos can be processed faster than real-time for assessing behavioural profiles
 Once the model is reliably detecting behaviour(s) of interest, it is possible to send real-time alerts triggered by specific behaviours, such as stereotypical pacing. The triggering threshold can be easily adjusted (a single frame detection vs. two minutes of continuous pacing). As a single missed detection could prevent the email alert from triggering, we also set a parameter specifying the percent of detected frames (e.g., 80% instead of 100%) that would qualify and initiate a pacing alert.
 
 Important to note is that contexually similar behaviours, such as locomotion and stereotypical pacing, can be distinguished from one another by applying logic-based heuristics to the base behavioural category. As an example, see the logic used below, which sets the criteria for what qualifies routine swimming from stereotypic loop swimming bouts. 
-<img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/ed2632a5-b6e3-4b8c-a273-43df529b82cd" />
+<img width="3951" height="2268" alt="ROAM_LoopSwimInference" src="https://github.com/user-attachments/assets/e8178ced-e2db-4a75-b662-134529070efe" />
 
 
 To demonstrate applicability beyond polar bear monitoring in zoological settings, the ROAM framework was applied to two publicly available datasets representing distinct taxa and study contexts, including free-ranging wildlife from the Siberian jay and KABR datasets (Chan et al., 2025; Kholiavchenko et al., 2025). In each case, deployment required only substitution of task-specific model weights and user-defined behavioural classes (previously validated by Chan et al., 2025) to enable real-time alerts and post-monitoring behavioural summaries.
-<img width="2034" height="2299" alt="Figure6" src="https://github.com/user-attachments/assets/5adcc71e-ad5a-4188-a353-76821161f221" />
+<img width="2114" height="2348" alt="ROAM_Applications" src="https://github.com/user-attachments/assets/0117e32d-e02c-495c-923a-af78641d7fac" />
 
 
 ## Citation
