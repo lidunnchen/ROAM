@@ -1,0 +1,32 @@
+##Requirements
+ultralytics==8.0.143
+scikit-image==0.21.0
+filterpy==1.4.5
+scikit-learn==1.3.2
+natsort==8.4.0
+opencv-python
+numpy
+matplotlib
+python-dotenv
+pandas
+
+# Core inference and tracking
+ultralytics==8.0.143
+opencv-python
+filterpy
+natsort
+
+# Data handling and utilities
+numpy
+pandas
+python-dotenv
+scikit-learn==1.3.2
+scikit-image==0.21.0
+
+# Plotting and visualization
+matplotlib
+seaborn           # Optional but great for better-looking heatmaps and barplots
+plotly            # Optional interactive plots, e.g., time-based behaviors
+
+# Email alerts
+secure-smtplib    # Optional: depends on whether you're sending alerts via SSL
