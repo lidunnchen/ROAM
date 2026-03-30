@@ -62,7 +62,7 @@ Please refer to the manuscript cited below for details regarding the YOLO file s
 * In addition to training data (images and associated labels/annotations), a train.txt file, .yaml file, and pretrained model weights [("yolov8m.pt"](https://huggingface.co/Ultralytics/YOLOv8)) are needed for training and deploying predictive models on livestream video footage or precorded video sequences. These files can be found in the [Data](./Data) and [Code](./Code) folders.
   
 
-As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/PantherAI), which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript. You can access the scripts mentioned in the article here: ![ROAM Scripts]()
+As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/PantherAI), which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript. You can access the scripts mentioned in the article here: ![ROAM Scripts](./Code)
 
 ```
 python_ROAM.py
