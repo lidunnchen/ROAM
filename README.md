@@ -62,7 +62,7 @@ Please refer to the manuscript cited below for details regarding the YOLO file s
 * In addition to training data (images and associated labels/annotations), a train.txt file, .yaml file, and pretrained model weights [("yolov8m.pt"](https://huggingface.co/Ultralytics/YOLOv8)) are needed for training and deploying predictive models on livestream video footage or precorded video sequences. These files can be found in the [Data](./Data) and [Code](./Code) folders.
   
 
-As opposed to our previous work, "PantherAI", which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript. You can access the scripts mentioned in the article here: ![ROAM Scripts]()
+As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/PantherAI), which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript. You can access the scripts mentioned in the article here: ![ROAM Scripts]()
 
 ```
 python_ROAM.py
@@ -76,7 +76,6 @@ Once the model is reliably detecting behaviour(s) of interest, it is possible to
 Important to note is that contexually similar behaviours, such as locomotion and stereotypical pacing, can be distinguished from one another by applying logic-based heuristics to the base behavioural category. As an example, see the logic used below, which sets the criteria for what qualifies routine swimming from stereotypic loop swimming bouts. 
 <img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/ed2632a5-b6e3-4b8c-a273-43df529b82cd" />
 
-![ROAM Scripts](./Images/__.png)
 
 To demonstrate applicability beyond polar bear monitoring in zoological settings, the ROAM framework was applied to two publicly available datasets representing distinct taxa and study contexts, including free-ranging wildlife from the Siberian jay and KABR datasets (Chan et al., 2025; Kholiavchenko et al., 2025). In each case, deployment required only substitution of task-specific model weights and user-defined behavioural classes (previously validated by Chan et al., 2025) to enable real-time alerts and post-monitoring behavioural summaries.
 <img width="2034" height="2299" alt="Figure6" src="https://github.com/user-attachments/assets/5adcc71e-ad5a-4188-a353-76821161f221" />
