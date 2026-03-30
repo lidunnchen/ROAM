@@ -69,7 +69,8 @@ python_ROAM.py
 ```
 
 Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
-<img width="3892" height="2207" alt="ROAM_LoopSwimInferrence" src="https://github.com/user-attachments/assets/cf7c4c50-c238-43ad-9c6b-4bc8d6729b85" />
+<img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/46a9343d-a8e8-447e-a65e-2ec9ce02d76a" />
+
 
 Once the model is reliably detecting behaviour(s) of interest, it is possible to send real-time alerts triggered by specific behaviours, such as stereotypical pacing. The triggering threshold can be easily adjusted (a single frame detection vs. two minutes of continuous pacing). As a single missed detection could prevent the email alert from triggering, we also set a parameter specifying the percent of detected frames (e.g., 80% instead of 100%) that would qualify and initiate a pacing alert.
 
