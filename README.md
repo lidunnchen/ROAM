@@ -68,9 +68,7 @@ As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/P
 python_ROAM.py
 ```
 <img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/46a9343d-a8e8-447e-a65e-2ec9ce02d76a" />
-*Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
-
-
+Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
 
 Once the model is reliably detecting behaviour(s) of interest, it is possible to send real-time alerts triggered by specific behaviours, such as stereotypical pacing. The triggering threshold can be easily adjusted (a single frame detection vs. two minutes of continuous pacing). As a single missed detection could prevent the email alert from triggering, we also set a parameter specifying the percent of detected frames (e.g., 80% instead of 100%) that would qualify and initiate a pacing alert.
 
@@ -85,7 +83,7 @@ To demonstrate applicability beyond polar bear monitoring in zoological settings
 
 ## Citation
 ```
-Chen, L-D., Dodds, S., McGuire, M., & Mastromonaco, G. (IN PREPARATION). Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams
+Chen, L-D., Dodds, S., McGuire, M., & Mastromonaco, G. (IN PREPARATION). Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams.
 ```
 
 
