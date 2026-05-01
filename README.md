@@ -9,7 +9,7 @@ Use permitted for academic and non-commercial research purposes only.
 Commercial use is prohibited without explicit permission from the authors.
 
 ## Description
-This repository contains code for the ROAM behavioural monitoring framework, a computer vision method that can be used for real-time monitoring of CCTV livestreams and more for generating metrics such as activity budget, space use heatmaps, and estbalishing real-time alert systems.
+This repository contains code for the ROAM behavioural monitoring framework, a unified computer vision-based pipeline that can be used for real-time monitoring of continuous video sources (CCTV livestreams, drone, and camera trap imagery) for generating metrics such as behavioural activity budget, space use heatmaps, and customizable alert-enabled systems.
 
 
 <img width="1536" height="1024" alt="ROAM_logo" src="https://github.com/user-attachments/assets/657e7195-5715-4c75-bd1d-1d0f03488103" />
