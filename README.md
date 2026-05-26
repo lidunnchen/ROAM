@@ -52,7 +52,7 @@ The provided dataset contains ~14,000 labeled images across 5 behavioural classe
 
 #### 📦 Download
 
-**Video Frames and Associated Labels (51 GB total)**:  
+**Video Frames and Associated Labels (93 GB total; 65 GB for training and 28 GB for test dataset)**:  
 [Download from Zenodo](https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA)
 
 ## Run Inference on Sample Data
