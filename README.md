@@ -53,7 +53,7 @@ The provided dataset contains ~14,000 labeled images across 5 behavioural classe
 #### 📦 Download
 
 **Video Frames and Associated Labels (93 GB total; 65 GB for training and 28 GB for test dataset)**:  
-[Download from Zenodo](https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA)
+[Download from Zenodo]([https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA](https://zenodo.org/uploads/19700557))
 
 ## Run Inference on Sample Data
 After installation of required softare packages and downloading the sample dataset, the below series of scripts should be executable through the Anaconda Prompt environment. Ensure that the current working directory is set to `ROAM_Repo` or the source location of your project files. You can change your working directory by using the "cd" command:  `cd /path/to/ROAM_Repo`
@@ -76,7 +76,8 @@ Once the model is reliably detecting behaviour(s) of interest, it is possible to
 Important to note is that contexually similar behaviours, such as locomotion and stereotypical pacing, can be distinguished from one another by applying logic-based heuristics to the base behavioural category. As an example, see the logic used below, which sets the criteria for what qualifies routine swimming from stereotypic loop swimming bouts. 
 <img width="3951" height="2268" alt="ROAM_LoopSwimInference" src="https://github.com/user-attachments/assets/e8178ced-e2db-4a75-b662-134529070efe" />
 
-
+Before the ROAM pipeline is deployed in real-world scenarios, concordance testing should be carried out to assess the validity of the model of inferring various behavioural states, such as the quantification of loop swimming laps by comparing human-coded observations against the automated, AI-based method. The level of agreement should align with institutional standards (e.g., interobserver reliability of ≥ 85%). Python and R code scripts are provided in the Code section to assist users with this step. 
+![ModelValidation](./Images/Figure3.png)
 
 To demonstrate applicability beyond polar bear monitoring in zoological settings, the ROAM framework was applied to two publicly available datasets representing distinct taxa and study contexts, including free-ranging wildlife from the Siberian jay and KABR datasets (Chan et al., 2025; Kholiavchenko et al., 2025). In each case, deployment required only substitution of task-specific model weights and user-defined behavioural classes (previously validated by Chan et al., 2025) to enable real-time alerts and post-monitoring behavioural summaries.
 <img width="2114" height="2348" alt="ROAM_Applications" src="https://github.com/user-attachments/assets/0117e32d-e02c-495c-923a-af78641d7fac" />
