@@ -67,7 +67,7 @@ As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/P
 ```
 python_ROAM.py
 ```
-<img width="1192" height="601" alt="ROAM_appInterface" src="https://github.com/user-attachments/assets/46a9343d-a8e8-447e-a65e-2ec9ce02d76a" />
+![Roam_AppInterface](./Images/ROAM_appInterface.png)
 Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
 
 ## Real-time Alert System for Wildlife Management Insights
