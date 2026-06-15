@@ -95,4 +95,4 @@ Anonymous. (Submitted). Towards 24/7 behavioural monitoring: Automated real-time
 ## Contact
 If you have any questions/ suggestions with the pipeline, or any additional instructions/ guidelines you would like to see in the documentation, feel free to contact me directly via email:
 
-lchen[at]torontozoo.ca
+email@anonymous.com
