@@ -118,7 +118,7 @@ camera_ip_pb2 = os.getenv("CAMERA_IP_PB2", "10.254.16.76")
 camera_ip_pb4 = os.getenv("CAMERA_IP_PB4", "10.254.16.186")
 email_sender = os.getenv("EMAIL_SENDER")
 email_password = os.getenv("EMAIL_PASSWORD")
-email_receiver = "lchen@torontozoo.ca"
+email_receiver = "email@email.com" #INSERT EMAIL ADDRESS OF RECIPIENT(S)
  
 camera_urls = [
     f"rtsp://{username}:{password}@{camera_ip_pb5}/axis-media/media.amp",
