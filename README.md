@@ -1,8 +1,8 @@
 # ROAM: Real-time Objective Animal Monitoring Toolkit 
 ## Associated article: Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams
-Anonymous 1 (Anonymous Institution 1)
+Li-Dunn Chen, Molly McGuire, Gabriela Mastromonaco (Toronto Zoo)
 
-Anonymous 2 (Anonymous Institution 2)
+Stephen Dodds (Juuk Inc.)
 
 ### This dataset is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
 Use permitted for academic and non-commercial research purposes only.
