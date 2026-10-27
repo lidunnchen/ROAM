@@ -1,6 +1,6 @@
 # ROAM: Real-time Objective Animal Monitoring Toolkit 
 ## Associated article: Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams
-Li-Dunn Chen, Molly McGuire, Gabriela Mastromonaco (Toronto Zoo)
+Li-Dunn Chen, Molly McGuire, Gabriela Mastromonaco (Wildlife Health & Science Centre, Toronto Zoo)
 
 Stephen Dodds (Juuk Inc.)
 
@@ -88,7 +88,7 @@ To demonstrate applicability beyond polar bear monitoring in zoological settings
 
 ## Citation
 ```
-Anonymous. (Submitted). Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams.
+Chen, L-D., Dodds, S., McGuire, M., Mastromonaco, G. Towards 24/7 behavioural monitoring: Automated real-time surveillance of animal behaviour from continuous video streams. Accepted in _Methods in Ecology and Evolution_.
 ```
 
 
