@@ -55,7 +55,7 @@ The provided dataset contains ~14,000 labeled images across 5 behavioural classe
 **Video Frames and Associated Labels (93 GB total; 65 GB for training and 28 GB for test dataset)**:  
 [Download from Zenodo (v1)](https://zenodo.org/records/19700557)
 
-**Most up-to-date code scripts for deploying ROAM on Windows and MAC OS)**:  
+**Most up-to-date code scripts for deploying ROAM on Windows and MAC operating systems**:  
 [Access from Zenodo (v3)](https://zenodo.org/records/19700557)
 
 ## Run Inference on Sample Data
