@@ -53,7 +53,10 @@ The provided dataset contains ~14,000 labeled images across 5 behavioural classe
 #### 📦 Download
 
 **Video Frames and Associated Labels (93 GB total; 65 GB for training and 28 GB for test dataset)**:  
-[Download from Zenodo]([https://zenodo.org/records/17497020?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImUxOGFmMWFlLTI3MzUtNGMzNC1hYzJjLWJiODQ0NGI5MmQwOSIsImRhdGEiOnt9LCJyYW5kb20iOiI4ODk0OTI3MDNlZmFkMTk3NWVlMmZlZDBjMDM5ZjRkNiJ9.126GeRvizJagtLPX5JzkdT6-ZJZq6jRpwoJILhKOAopVHt_dkcuMXDEQ-s4lyzgt-FKpj_BKUvpVJc2IX12XRA](https://zenodo.org/uploads/19700557))
+[Download from Zenodo (v1)](https://zenodo.org/records/19700557))
+
+**Most up-to-date code scripts for deploying ROAM on Windows and MAC OS)**:  
+[Access from Zenodo (v3)](https://zenodo.org/records/19700557))
 
 ## Run Inference on Sample Data
 After installation of required softare packages and downloading the sample dataset, the below series of scripts should be executable through the Anaconda Prompt environment. Ensure that the current working directory is set to `ROAM_Repo` or the source location of your project files. You can change your working directory by using the "cd" command:  `cd /path/to/ROAM_Repo`
