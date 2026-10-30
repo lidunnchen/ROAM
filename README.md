@@ -96,6 +96,6 @@ Chen, L-D., Dodds, S., McGuire, M., Mastromonaco, G. Towards 24/7 behavioural mo
 
 
 ## Contact
-If you have any questions/ suggestions with the pipeline, or any additional instructions/ guidelines you would like to see in the documentation, feel free to contact me directly via email:
+If you have any questions/ suggestions with the pipeline, or any additional instructions/ guidelines you would like to see in the documentation, please utilize the Discussions tab:
 
-email@anonymous.com
+(https://github.com/lidunnchen/ROAM/discussions)
