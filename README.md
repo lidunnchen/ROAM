@@ -9,7 +9,8 @@ Use permitted for academic and non-commercial research purposes only.
 Commercial use is prohibited without explicit permission from the authors.
 
 ## Description
-This repository contains code for the ROAM behavioural monitoring framework, a unified computer vision-based pipeline that can be used for real-time monitoring of wildlife from continuous video sources (CCTV livestreams, drone, and camera trap imagery) for generating metrics such as behavioural activity budget, space use heatmaps, and customizable alert-enabled systems.
+This repository contains instructions for the ROAM behavioural monitoring framework, a unified computer vision-based pipeline that can be used for real-time monitoring of wildlife from continuous video sources (CCTV livestreams, drone, and camera trap imagery) for generating metrics such as behavioural activity budget, space use heatmaps, and customizable alert-enabled systems. **Most up-to-date code scripts for deploying ROAM on Windows and MAC operating systems can be found at the Zenodo linked below**:  
+[Access from Zenodo (v3)](https://zenodo.org/records/19700557)
 
 
 <img width="1536" height="1024" alt="ROAM_logo" src="https://github.com/user-attachments/assets/657e7195-5715-4c75-bd1d-1d0f03488103" />
