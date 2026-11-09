@@ -66,10 +66,10 @@ Please refer to the manuscript cited below for details regarding the YOLO file s
 * In addition to training data (images and associated labels/annotations), a train.txt file, .yaml file, and pretrained model weights [("yolov8m.pt"](https://huggingface.co/Ultralytics/YOLOv8)) are needed for training and deploying predictive models on livestream video footage or precorded video sequences. These files can be found in the [Data](./Data) and [Code](./Code) folders.
   
 
-As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/PantherAI), which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single masterscript. You can access the ROAM framework and auxiliary scripts mentioned in the article here: ![ROAM Scripts](./Code)
+As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/PantherAI), which required independent scripts to generate space use heatmaps and activity budgets, the ROAM framework provies a unified end-to-end pipeline that automatically generates intuitive visuals through the execution of a single master script. As shown below, the "ROAM.py" script will initiate a monitoring session that either processes live video feeds or a pre-recorded video file that is user selected.
 
 ```
-python_ROAM.py
+python ROAM.py
 ```
 ![Roam_AppInterface](./Images/ROAM_appInterface.png)
 Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
