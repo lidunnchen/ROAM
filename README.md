@@ -72,7 +72,9 @@ As opposed to our previous work, [("PantherAI)"](https://github.com/lidunnchen/P
 python ROAM.py
 ```
 ![Roam_AppInterface](./Images/ROAM_appInterface.png)
-Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. QUICK HINT: Users must specify whether they would like to initiate a live monitoring session utilizing video livestreams (specified via the "camera_ip" argument and the associated, separate .env file), or listing the file name/file path for a pre-recorded video. The below is an example where a live session is initiated by modifying the "capture_and_infer" statements, which can be found at the very bottom of the ROAM script: 
+Videos can be processed faster than real-time for assessing behavioural profiles in real-time through live camera surveillance or retroactively from pre-recorded video sources (demonstrated for continuous camera trap drone videos). ROAM can be used to evaluate the activity budget for any video duration and express the monitoring session as the proportion of time engaged in each behavioural category. 
+
+QUICK HINT: Users must specify whether they would like to initiate a live monitoring session utilizing video livestreams (specified via the "camera_ip" argument and the associated, separate .env file), or listing the file name/file path for a pre-recorded video. The below is an example where a live session is initiated by modifying the "capture_and_infer" statements, which can be found at the very bottom of the ROAM script: 
 
 ```
 capture_and_infer(camera_urls) # place the hash / pound symbol directly in front of this line of code to make the argument inactive
