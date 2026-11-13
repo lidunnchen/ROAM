@@ -10,7 +10,7 @@ Commercial use is prohibited without explicit permission from the authors.
 
 ## Description
 This repository contains instructions for the ROAM behavioural monitoring framework, a unified computer vision-based pipeline that can be used for real-time monitoring of wildlife from continuous video sources (CCTV livestreams, drone, and camera trap imagery) for generating metrics such as behavioural activity budget, space use heatmaps, and customizable alert-enabled systems. **Most up-to-date code scripts for deploying ROAM on Windows and MAC operating systems can be found at the Zenodo linked below**:  
-[Access from Zenodo (v3)](https://zenodo.org/records/19700557)
+[Access from Zenodo (v4)](https://zenodo.org/records/24205950)
 
 
 <img width="1536" height="1024" alt="ROAM_logo" src="https://github.com/user-attachments/assets/657e7195-5715-4c75-bd1d-1d0f03488103" />
@@ -28,7 +28,7 @@ This repository contains instructions for the ROAM behavioural monitoring framew
 
 
 ## Quick Start
-We provide the whole computer vision pipeline from data annotation to model training and deployment in the associated article linked. Here, we will run a quick demo inference visualization. Make sure you download the [sample dataset containing images and associated behavioural labels](https://zenodo.org/uploads/19700557). In the near future, video walkthroughs will be provided.
+We provide the whole computer vision pipeline from data annotation to model training and deployment in the associated article linked. Here, we will run a quick demo inference visualization. Make sure you download the [sample dataset containing images and associated behavioural labels](https://zenodo.org/records/24205950). In the near future, video walkthroughs will be provided.
 
 ### Installation
 There are a series of required packages to run the pipeline. We recommend creating a [conda environment](https://www.anaconda.com/). For ease of deployment, we recommend the use of a command line interface such as Anaconda Prompt or a code editor such as VS Code. 
@@ -53,11 +53,11 @@ The provided dataset contains ~14,000 labeled images across 5 behavioural classe
 
 #### 📦 Download
 
-**Video Frames and Associated Labels (93 GB total; 65 GB for training and 28 GB for test dataset)**:  
-[Download from Zenodo (v1)](https://zenodo.org/records/19700557)
+**Video Frames and Associated Labels (93 GB total; 64 GB for training and 26 GB for test dataset)**:  
+[Download from Zenodo (v4)](https://zenodo.org/records/24205950)
 
 **Most up-to-date code scripts for deploying ROAM on Windows and MAC operating systems**:  
-[Access from Zenodo (v3)](https://zenodo.org/records/19700557)
+[Access from Zenodo (v4)](https://zenodo.org/records/24205950)
 
 ## Run Inference on Sample Data
 After installation of required softare packages and downloading the sample dataset, the below series of scripts should be executable through the Anaconda Prompt environment. Ensure that the current working directory is set to `ROAM_Repo` or the source location of your project files. You can change your working directory by using the "cd" command:  `cd /path/to/ROAM_Repo`
