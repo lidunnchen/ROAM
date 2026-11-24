@@ -31,7 +31,7 @@ This repository contains instructions for the ROAM behavioural monitoring framew
 We provide the whole computer vision pipeline from data annotation to model training and deployment in the associated article linked. Here, we will run a quick demo inference visualization. Make sure you download the [sample dataset containing images and associated behavioural labels](https://zenodo.org/records/24205950). In the near future, video walkthroughs will be provided.
 
 ### Installation
-There are a series of required packages to run the pipeline. We recommend creating a [conda environment](https://www.anaconda.com/) (We recommend installing the Anaconda software bundle, linked). For ease of deployment, we recommend the use of a command line interface such as Anaconda Prompt or a code editor such as VS Code. 
+There are a series of required packages to run the pipeline. We recommend installing the Anaconda software bundle [here](https://www.anaconda.com/) and creating a conda environment. For ease of deployment, we recommend the use of a command line interface such as Anaconda Prompt or a code editor such as VS Code. 
 
 You can create a new environment and install required packages by running:
 ```
