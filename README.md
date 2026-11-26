@@ -4,7 +4,9 @@ Li-Dunn Chen, Molly McGuire, Gabriela Mastromonaco (Wildlife Health & Science Ce
 
 Stephen Dodds (Juuk Inc.)
 
-### This dataset is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+Link to article published in Methods in Ecology and Evolution here: [ROAM Article]([https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70441?af=R)]). 
+
+### The associated dataset and codebase are licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
 Use permitted for academic and non-commercial research purposes only.
 Commercial use is prohibited without explicit permission from the authors.
 
